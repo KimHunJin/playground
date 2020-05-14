@@ -1,0 +1,13 @@
+#npm
+/node_modules
+package-lock.json
+
+#build
+/public/build
+
+#intelliJ
+/.idea
+
+#apollo-graphql
+/apollo-graphql/node_modules
+/apollo-graphql/package-lock.json
