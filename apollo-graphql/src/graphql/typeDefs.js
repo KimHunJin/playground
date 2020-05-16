@@ -4,8 +4,11 @@ const typeDefs = gql`
 
 	type User {
 		id: Int!
+		name: String!
 		ID: String!
-		password: String!
+		passwordHash: String
+		role: [String!]!
+		token: String
 	}
 
 	type Movie {
@@ -18,11 +21,16 @@ const typeDefs = gql`
 		movies: [Movie!]!
 		movie(id: Int!): Movie
 		users: [User]!
+		user(ID: String!): User
+		me: User!
 	}
 
 	type Mutation {
 		addMovie(name: String!, rating: Int!): Movie!
 		addUser(ID: String!, password: String!): User
+		signUp(name: String!, ID: String!, password: String!): Boolean!
+		login(ID: String!, password: String!): User
+		logout: Boolean!
 	}
 `;
 
