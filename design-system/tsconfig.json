@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "./lib",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "typeRoots" : ["node_modules/@types", "src/types"],
+    "types": [],
+    "lib": ["es2015", "dom"],
+    "baseUrl": "./src"
+  },
+  "exclude": [
+    "node_modules",
+    "src/components/polyfills.ts",
+    "src/**/index.ts"
+  ]
+}
