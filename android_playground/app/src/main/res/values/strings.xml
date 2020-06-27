@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android_playground</string>
+    <string name="title_home">Home</string>
 </resources>

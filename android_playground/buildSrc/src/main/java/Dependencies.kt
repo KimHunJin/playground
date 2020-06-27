@@ -28,6 +28,8 @@ object BuildPlugins {
 
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val androidBuildGradle = "com.android.tools.build:gradle:${Versions.buildGradle}"
+
+    const val dynamicFeature = "com.android.dynamic-feature"
 }
 
 object Libraries {
@@ -44,6 +46,9 @@ object Libraries {
     const val mockitoCore = "org.mockito:mockito-core:${Versions.mockitoCore}"
     const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockitoKotlin}"
 
+}
 
-
+object Modules {
+    const val app = ":app"
+    const val home =":features:home"
 }
