@@ -26,7 +26,8 @@ android {
     }
 
     dynamicFeatures = mutableSetOf(
-        ":features:home"
+        Modules.home,
+        ":features:about"
     )
 }
 

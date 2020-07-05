@@ -2,8 +2,8 @@ plugins {
     id(BuildPlugins.dynamicFeature)
     kotlin(BuildPlugins.android)
     kotlin(BuildPlugins.androidExtensions)
+    id("kotlin-android")
 }
-
 android {
     compileSdkVersion(Versions.sdkVersion)
 
@@ -13,9 +13,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
 }
-
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 

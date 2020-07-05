@@ -18,18 +18,23 @@ object Versions {
     const val junit = "4.12"
     const val mockitoCore = "2.23.4"
     const val mockitoKotlin = "2.1.0"
+
+    const val dekt = "1.7.4"
 }
 
 object BuildPlugins {
     const val androidApplication = "com.android.application"
     const val android = "android"
     const val androidExtensions = "android.extensions"
+    const val androidLibrary = "com.android.library"
     const val kapt = "kapt"
 
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val androidBuildGradle = "com.android.tools.build:gradle:${Versions.buildGradle}"
 
     const val dynamicFeature = "com.android.dynamic-feature"
+    const val dektPlugin = "io.gitlab.arturbosch.detekt"
+
 }
 
 object Libraries {
